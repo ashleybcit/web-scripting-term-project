@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jQuery UI Autocomplete -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <!-- Flickity Photo Slider -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+    <!-- Additional Style Sheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Home</title>
+</head>
+<body>
+
+    <header>
+        <div class="site-header">
+            <div class="site-header__container">
+                <div class="site-header__menu-icon">
+                    <a href="#" class="js-menu-open"><ion-icon name="menu"></ion-icon></a>
+                </div>
+                <nav class="site-header__menu js-menu" data-open="0">
+                    <ul class="">
+                        <li class="site-header__close"><a href="#" class="js-menu-close"><ion-icon name="close"></ion-icon></a></li>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <!-- <li><a href="">Contact</a></li> -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="content">
+                <h1>Find New <div class="horror">HORROR</div>Movies!</h1>
+                <p>Select a horror movie to learn more and decide if it's the right fright for tonight.</p>
+                <form class="ui-widget" id="movieForm">
+                    <input type="text" id="tags" name="movie" placeholder="Enter a movie title" required>
+                    <button type="submit">Get Your Scare List!</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="top-picks">
+            <h1>Top Picks</h1>
+            <div class="picks-carousel">
+                <div class="carousel-cell"><img src="/images/poster-test.png" alt="test"></div>
+                <div class="carousel-cell"><img src="/images/poster-test.png" alt="test"></div>
+                <div class="carousel-cell"><img src="/images/poster-test.png" alt="test"></div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <p>Copyright 2025</p>
+    </footer>
+
+    <!-- Ion Icons -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!-- JQuery UI Autocomplete -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <!-- Flickity Photo Slider -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="/path/to/flickity.pkgd.min.js"></script>
+    <!-- Additional Scripts -->
+    <script src="js/nav.js"></script>
+    <script src="/js/index.js"></script>
+    
+</body>
+</html>

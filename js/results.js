@@ -3,6 +3,7 @@ console.log("Stored movie title:", movieTitle);
 
 const resultsContainer = document.querySelector(".results-container");
 
+// OMDb API Response
 if (!movieTitle) {
   resultsContainer.innerHTML = "<p>No movie selected. Go back and try again.</p>";
 } else {

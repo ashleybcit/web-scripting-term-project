@@ -1,29 +1,29 @@
 // HOMEPAGE - JQuery AUTOCOMLPETE Array Options -- UPDATE THIS!
 $( function() {
     var availableTags = [
+      "A Quiet Place",
+      "Candyman",
       "Get Out",
       "Hereditary",
+      "Insidious",
       "It Follows",
       "Midsommar",
-      "Us",
-      "The Witch",
-      "The Babadook",
       "Sinister",
-      "The Conjuring",
-      "It Follows",
-      "The Descent",
-      "The Ring",
-      "The Others",
-      "Insidious",
-      "The Exorcist",
-      "The Blair Witch Project",
-      "A Quiet Place",
-      "The Texas Chain Saw Massacre",
-      "Candyman",
       "Smile",
       "Talk to Me",
-      "The Invitation"
+      "The Babadook",
+      "The Blair Witch Project",
+      "The Conjuring",
+      "The Descent",
+      "The Exorcist",
+      "The Invitation",
+      "The Others",
+      "The Ring",
+      "The Texas Chain Saw Massacre",
+      "The Witch",
+      "Us"
     ];
+    
     $( "#tags" ).autocomplete({
       source: availableTags
     });
@@ -49,7 +49,3 @@ document.getElementById("movieForm").addEventListener("submit", function(e) {
     window.location.href = "results.html";
   }
 });
-
-// HOMEPAGE - Top Picks Pop Up Animated Modal
-
-$("#demo01").animatedModal();

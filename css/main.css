@@ -421,6 +421,10 @@ img {
         font-size: 1.5rem;
     }
 
+    .ui-menu-item-wrapper.ui-state-active {
+        font-size: 1.5rem;
+    }
+
     .top-picks > h1 {
         padding: 3rem;
     }

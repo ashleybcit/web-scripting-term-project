@@ -62,12 +62,12 @@ img {
 .search-btn {
   display: block;
   width: 90%;
-  padding: 1rem;
+  padding: 1.5rem;
   font-size: 1rem;
   text-align: center;
   border-radius: .4rem;
   text-decoration: none;
-  margin: 2rem auto;
+  margin: 1rem auto;
 }
 
 .ui-widget button:hover,
@@ -163,6 +163,10 @@ img {
         color: var(--color-green);
     }
 
+    .nav a {
+        font-size: 3rem;
+    }
+
     .nav a:hover {
         color: var(--color-green);
     }
@@ -229,7 +233,7 @@ img {
 
     input[type=text] {
         width: 90%;
-        padding: 1rem;
+        padding: 1.5rem;
         margin: .25rem 0;
         box-sizing: border-box;
     }
@@ -367,6 +371,22 @@ img {
 
 @media (min-width:52.125rem) {
 
+    .site-header__menu-icon {
+        font-size: 4rem;
+    }
+
+    .site-header__menu-icon a {
+        padding: 0 .5rem;
+    }
+
+    .nav a {
+        font-size: 4rem;
+    }
+
+    .site-header__close a {
+        font-size: 4rem;
+    } 
+
     h1 {
         font-size: 5rem;
     }
@@ -498,6 +518,14 @@ img {
     .site-header__menu ul {
         display: flex;
         gap: 1rem;
+    }
+
+    .nav li {
+        padding: 0 1rem;
+    }
+
+    .nav a {
+        font-size: 1.75rem;
     }
 
     p {

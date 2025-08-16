@@ -24,7 +24,6 @@ html, body {
 body {
   background-color: var(--color-black);
   position: relative;
-  /* font-family: var(--font-family); */
 }
 
 h1, h2 {
@@ -76,6 +75,11 @@ img {
   background-color: var(--color-green);
   color: var(--color-black);
   font-weight: 800;
+}
+
+.ui-widget button {
+    background-color: var(--color-darkslateblue);
+    color: white;
 }
 
 /* MEDIA QUERY - MOBILE */
@@ -363,9 +367,108 @@ img {
 
 @media (min-width:52.125rem) {
 
-    
+    h1 {
+        font-size: 5rem;
+    }
 
+    .horror {
+        font-size: 7rem;
+        line-height: 8rem;
+    }
+
+    p {
+        font-size: 3.5rem;
+        line-height: 4rem;
+        padding: 7rem 0;
+    }
+
+    .content {
+        padding: 7rem;
+    }
+
+    input[type=text] {
+        padding: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .ui-widget button {
+        padding: 2rem;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .ui-autocomplete {
+        font-size: 1.5rem;
+    }
+
+    .top-picks > h1 {
+        padding: 3rem;
+    }
+
+    footer {
+        padding: 0;
+    }
+
+    footer > p {
+        font-size: 1.25rem;
+    }
+    
+    .movie-card {
+        width: 80%;
+        padding: 2rem;
+        margin: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .movie-card img {
+        width: 80%;
+        margin: 2rem;
+    }
+
+    .movie-card h1 {
+        font-size: 3rem;
+        padding: 1rem;
+    }
+
+    .movie-card h2 {
+        font-size: 1.75rem;
+        padding: 1rem;
+    }
+
+    .movie-card h3 {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        padding: 1rem;
+    }
+
+    .movie-card p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .search-btn {
+        padding: 2rem;
+        font-size: 1.5rem;
+        width: 80%;
+    }
+
+    .content-about h1 {
+        padding: 3rem;
+    }
+
+    .content-about h2 {
+        font-size: 2.5rem;
+        padding: 3rem;
+    }
+
+    .content-about p {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        padding: 1.5rem 1rem;
+        margin-bottom: 1.75rem;
+    }
 }
+
 
 /* MEDIA QUERY - DESKTOP */
 
@@ -396,5 +499,53 @@ img {
         display: flex;
         gap: 1rem;
     }
+
+    p {
+        font-size: 3rem;
+    }
+
+    .movie-card {
+        width: 70%;
+        margin: 3rem;
+    }
+
+    .movie-card img {
+        width: 70%;
+        margin-bottom: 1rem;
+    }
+
+    .movie-card h2 {
+        font-size: 1.5rem;
+    }
+
+    .movie-card p {
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+    }
+
+    .search-btn {
+        padding: 2rem;
+        font-size: 1.5rem;
+        width: 70%;
+    }
+
+    .content-about {
+        margin-bottom: 2rem;
+    }
+
+    .content-about h1 {
+        padding: 2rem;
+    }
+
+    .content-about h2 {
+        font-size: 2.5rem;
+        padding: 2rem;
+    }
+
+    .content-about p {
+        padding: 2rem 5rem;
+        margin-bottom: 0;
+    }
+
 
 }

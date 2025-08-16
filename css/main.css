@@ -24,23 +24,58 @@ html, body {
 body {
   background-color: var(--color-black);
   position: relative;
+  /* font-family: var(--font-family); */
 }
 
 h1, h2 {
     font-family: var(--ff-Rubik);
     font-weight: 100;
+    color: var(--color-white);
 }
 
-h3 {
-    font-family: var(--ff-Poppins);
+h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
 }
+
+h3, input[type=text], input[placeholder], .ui-autocomplete, .ui-widget button, .ui-widget button:hover, .search-btn, .search-btn:hover, footer > p {
+  font-family: var(--ff-Poppins);
+}
+
+p, .content-about p {
+  font-family: var(--ff-Amarante);
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: var(--color-white);
+  }
 
 p {
-    font-family: var(--ff-Amarante);
+    padding: 3rem 1rem;
 }
 
 img { 
     max-width: 100%;
+}
+
+/* COMMON BUTTON STYLES */
+
+.ui-widget button,
+.search-btn {
+  display: block;
+  width: 90%;
+  padding: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: .4rem;
+  text-decoration: none;
+  margin: 2rem auto;
+}
+
+.ui-widget button:hover,
+.search-btn:hover {
+  background-color: var(--color-green);
+  color: var(--color-black);
+  font-weight: 800;
 }
 
 /* MEDIA QUERY - MOBILE */
@@ -59,6 +94,8 @@ img {
         z-index: 1;
         pointer-events: none;
     }
+
+    
     
     /* SITE HEADER & MENU */
     .site-header,
@@ -75,7 +112,6 @@ img {
         text-align: center;
         font-size: 1rem;
         padding: 1rem;
-        font-family: var(--ff-Poppins);
     }
 
     .site-header__container {
@@ -140,7 +176,7 @@ img {
         font-size: 3rem;
     }
 
-     .site-header__close a:hover {
+    .site-header__close a:hover {
         color: var(--color-green);
     }
 
@@ -179,23 +215,10 @@ img {
         background-color: var(--color-darkgray);
     }
 
-    h1 {
-        font-size: 3rem;
-        line-height: 3.5rem;
-        color: var(--color-white);
-    }
-
     .horror {
         color: var(--color-orange);
         font-size: 4rem;
         text-align: center;
-    }
-
-    p {
-        font-size: 1.5rem;
-        line-height: 2rem;
-        padding: 3rem 1rem;
-        color: var(--color-white);
     }
 
     /* FORM SUBMISSION */
@@ -203,15 +226,12 @@ img {
     input[type=text] {
         width: 90%;
         padding: 1rem;
-        margin: 8px 0;
+        margin: .25rem 0;
         box-sizing: border-box;
-        font-size: 1rem;
-        font-family: var(--ff-Poppins);
     }
 
     input[placeholder] {
         text-align: center;
-        font-family: var(--ff-Poppins);
     }
 
     input:focus {
@@ -222,7 +242,6 @@ img {
     /* Styles the autocomplete dropdown container */
     .ui-autocomplete {
         font-size: 1rem;
-        font-family: var(--ff-Poppins);
         background-color: var(--color-white);
     }
 
@@ -237,22 +256,6 @@ img {
         color: #ffffff;
         font-weight: bold;
         font-size: 1rem;
-    }
-
-    .ui-widget button {
-        width: 90%;
-        padding: 1rem;
-        font-size: 1rem;
-        background-color: var(--color-darkslateblue);
-        color: var(--color-white);
-        font-family: var(--ff-Poppins);
-    }
-
-    .ui-widget button:hover {
-        background-color: var(--color-green);
-        color: var(--color-black);
-        font-weight: 800;
-        font-family: var(--ff-Poppins);
     }
 
     .picks-carousel {
@@ -270,7 +273,7 @@ img {
     }
 
     .flickity-page-dots {
-        bottom: 10px;
+        bottom: 1rem;
     }
 
     /* RESULTS */
@@ -289,7 +292,7 @@ img {
 
     .movie-card img {
         width: 100%;
-        border-radius: 4px;
+        border-radius: .25rem;
         border: 1px solid var(--color-lightgrey);
     }
 
@@ -309,39 +312,25 @@ img {
 
     .movie-card h3 {
         color: var(--color-lightgrey);
-        font-family: var(--ff-Poppins);
         padding: .75rem;
         font-size: 1rem;
-        justify-self: center;
         line-height: 1.5rem;
     }
 
     .movie-card p {
-        color: white;
         padding: 1rem 0;
         padding-bottom: .5rem;
         font-size: 1.25rem;
-        justify-self: center;
         line-height: 1.5rem;
     }
 
     .search-btn {
-        display: block;
         background-color: var(--color-orange);
         color: var(--color-black);
-        text-align: center;
-        padding: 2rem;
-        max-width: 90%;
-        margin: 2rem auto;
-        border-radius: 6px;
-        text-decoration: none;
-        font-family: var(--ff-Poppins);
     }
 
     .search-btn:hover {
-        background-color: var(--color-green);
         font-weight: 800;
-        font-family: var(--ff-Poppins);
     }
 
     /* ABOUT */
@@ -372,7 +361,11 @@ img {
 
 /* MEDIA QUERY - TABLET */
 
-@media (min-width:52.125rem) {}
+@media (min-width:52.125rem) {
+
+    
+
+}
 
 /* MEDIA QUERY - DESKTOP */
 
